@@ -81,7 +81,9 @@ def sidebar_item(text: str, url: str) -> rx.Component:
                 ("About", sidebar_item_icon("book-open")),
                 ("Profile", sidebar_item_icon("user")),
                 ("Settings", sidebar_item_icon("settings")),
-                sidebar_item_icon("layout-dashboard"),
+                ("Login", sidebar_item_icon("user")),
+                ("Timeline", sidebar_item_icon("clock")),
+                sidebar_item_icon("user"),
             ),
             rx.text(text, size="3", weight="regular"),
             color=rx.cond(
@@ -137,6 +139,7 @@ def sidebar() -> rx.Component:
         "/about",
         "/profile",
         "/settings",
+        "/login",
     ]
 
     # Get the decorated pages.
