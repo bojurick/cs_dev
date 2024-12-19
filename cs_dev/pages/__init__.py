@@ -5,3 +5,4 @@ from .about import about
 from .profile import profile
 from .login import login
 from .timeline import timeline
+from .dialog import dialog

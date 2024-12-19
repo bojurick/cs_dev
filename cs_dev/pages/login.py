@@ -85,5 +85,4 @@ def login() -> rx.Component:
             ),
         ),
         width="100%",
-
     )
